@@ -1,40 +1,88 @@
 import numpy as np
-X=[]
+
 def makeMatrix():
+    j = 0
     for element in elements:
-        print("seraching for "+element)
+       # print("seraching for "+element)
         x=[]
-        j=0
         for compound in ingredients:
-            print("ing:")
-            print(compound)
+            flag = False
+            #print(" in ingredients:")
+            #print(compound)
+            i = 0
             for c in compound:
-                print(c)
-                i=0
+               # print(f"i={i} j={j}")
+                #print(c)
                 if(c==element):
-                    print("YES")
-              #      x[j]=int(compound[i+1])
+                    flag=True
+                   # print("YES")
+                    n=len(compound)
+                    if(i+1<n):
+                      #  print("NEXT=> "+compound[i+1])
+                       # print(f"ascii= {ord(compound[i + 1])}")
+                        if(ord(compound[i+1])>=65 and ord(compound[i+1])<=90):
+                            arr=[1]
+                            x=x+arr
+                        else:
+                            arrI=[compound[i+1]]
+                            x=x+arrI
+                    else:
+                        arr = [1]
+                        x = x + arr
                 i+=1
+            if(flag==False):
+                arrZ = [0]
+                x = x + arrZ
+
+
         for compound in products:
-            print("pro\n")
-            print(compound)
+            flag = False
+           # print("in products\n")
+           # print(compound)
+            i = 0
             for c in compound:
-                print(c)
-                i = 0
-                if (c == element):
-                    print("YES")
-              #      x[j] = int(compound[i + 1])
-                i+=1
+               # print(f"i={i} j={j}")
+               # print(c)
+                if(c==element):
+                    flag=True
+                  #  print("YES")
+                    n=len(compound)
+                    if(i+1<n):
+                      #  print("NEXT=> "+compound[i+1])
+                      #  print(f"ascii= {ord(compound[i + 1])}")
+                        if(ord(compound[i+1])>=65 and ord(compound[i+1])<=90):
+                            arr=[-1]
+                            x=x+arr
+                        else:
+                            k=int(compound[i+1])
+                            k=k*-1
+                            arrI=[k]
+                            x=x+arrI
+                    else:
+                        arr = [-1]
+                        x = x + arr
+
+                i += 1
+            if(flag==False):
+                arrZ = [0]
+                x = x + arrZ
+
+        arrf = [0]
+        x = x + arrf
+       # print(x)
         j+=1
-       # X.append(x)
-        #print(X)
+        X.append(x)
+      #  print(X)
 
 elements=input("Enter elements: ")
 equation=input("Enter equation: (example: 𝐶2𝐻6+𝑂2→𝐶𝑂2+𝐻2𝑂)")
-data=equation.split("→")
+data=equation.split(">")
 ingredients=data[0].split("+")
 products=data[1].split("+")
-print(ingredients)
-print(products)
+# print(elements)
+# print(ingredients)
+# print(products)
 shape=(len(elements),len(ingredients)+len(products))
+X=[]
 makeMatrix()
+print(X)
