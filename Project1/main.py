@@ -1,5 +1,5 @@
 import numpy as np
-
+from Calc import Calculator
 def makeMatrix():
     j = 0
     for element in elements:
@@ -24,7 +24,7 @@ def makeMatrix():
                             arr=[1]
                             x=x+arr
                         else:
-                            arrI=[compound[i+1]]
+                            arrI=[int(compound[i+1])]
                             x=x+arrI
                     else:
                         arr = [1]
@@ -85,4 +85,7 @@ products=data[1].split("+")
 shape=(len(elements),len(ingredients)+len(products))
 X=[]
 makeMatrix()
-print(X)
+#print(X)
+obj=Calculator(X,len(elements))
+obj.printer()
+obj.makeEchlon()
