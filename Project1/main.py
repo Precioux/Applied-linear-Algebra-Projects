@@ -87,5 +87,4 @@ X=[]
 makeMatrix()
 #print(X)
 obj=Calculator(X,len(elements))
-obj.printer()
-obj.makeEchlon()
+obj.ready()
