@@ -79,6 +79,7 @@ equation=input("Enter equation: (example: 𝐶2𝐻6+𝑂2→𝐶𝑂2+𝐻2𝑂
 data=equation.split(">")
 ingredients=data[0].split("+")
 products=data[1].split("+")
+
 # print(elements)
 # print(ingredients)
 # print(products)
@@ -86,5 +87,5 @@ shape=(len(elements),len(ingredients)+len(products))
 X=[]
 makeMatrix()
 #print(X)
-obj=Calculator(X,len(elements))
+obj=Calculator(X,len(elements),len(ingredients)+len(products))
 obj.ready()

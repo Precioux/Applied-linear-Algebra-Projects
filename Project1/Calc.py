@@ -2,7 +2,8 @@ import numpy as np
 
 
 class Calculator:
-    def __init__(self, matrix, elements):
+    def __init__(self, matrix, elements,compounds):
+        self.compounds=compounds
         self.matrix = np.array(matrix)
         self.matrix = self.matrix.astype(float)
         self.elements = elements
@@ -74,17 +75,39 @@ class Calculator:
     def reduceIt(self):
         t = 0
         while t < self.elements:
-            for i in range(0, 3):
+            for i in range(0, self.compounds-1):
                 n = float(self.matrix[t][i])
                 if n != 0 and t != i:
                     self.matrix[t] = self.matrix[t] - n * self.matrix[i]
             t += 1
 
     def getResults(self):
+            ans=self.checkFree()
             s=0
             while s<self.elements:
-                print(f"X{s} = {self.matrix[s][3]}")
+                a = float(self.matrix[s][self.compounds - 1])
+                if a<0:
+                    if a==0:
+                        a=float(1)
+                    else:
+                        a=a*(-1)
+                if ans!=-1:
+                    print(f"X{s} = {a} X{ans}")
+                else:
+                    print(f"X{s} = {a}")
                 s+=1
+            if ans!=-1:
+                print(f"X{ans} is free")
+    def checkFree(self):
+        ans=-1
+        for i in range(0,self.compounds):
+            sum=0
+            for j in range(self.elements):
+                if self.matrix[j][i]!=0 and self.matrix[j][i]!=1:
+                    sum+=1
+            if sum==self.elements:
+                ans=sum
+        return ans
 
     def ready(self):
         self.printer()
