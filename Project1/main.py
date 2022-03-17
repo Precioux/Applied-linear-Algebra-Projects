@@ -59,8 +59,8 @@ def makeMatrix():
         X.append(x)
 
 
-elements = input("Enter elements: ")
-equation = input("Enter equation: (example: 𝐶2𝐻6+𝑂2>𝐶𝑂2+𝐻2𝑂")
+elements = input("Enter elements: (CAPITAL LETTERS!)")
+equation = input("Enter equation: (example: 𝐶2𝐻6+𝑂2>𝐶𝑂2+𝐻2𝑂)")
 data = equation.split(">")
 ingredients = data[0].split("+")
 products = data[1].split("+")
