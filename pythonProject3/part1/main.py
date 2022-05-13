@@ -1,5 +1,5 @@
 # LA HW3
-# Samin
+# Samin Mahdipour - 9839039
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
@@ -18,15 +18,6 @@ r = np.array([data[0][0][0]])
 g = np.array([data[0][0][1]])
 b = np.array([data[0][0][2]])
 k = 0
-# part1.jpgplt.figure(figsize=(10,10))
-# x = np.arange(0,20)
-# y = np.cos(x)
-# plt.subplot(3,1,1)
-# plt.plot(x,y)
-# plt.subplot(3,1,2)
-# plt.plot(x,y/2)
-# plt.subplot(3,1,3)
-# plt.plot(x,2*y)
 
 for i in range(1, ht):
     for j in range(1, wd):
