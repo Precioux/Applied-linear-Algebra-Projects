@@ -57,13 +57,12 @@ for i in range(height):
             so to adust to that we will need to change new_x and new_y with respect to the new centre'''
         new_y = new_centre_height - new_y
         new_x = new_centre_width - new_x
-        print(image[i][j])
         if ( 240 <= image[i][j][0] <= 255 )  and ( 240 <= image[i][j][1] <= 255 ) and ( 240 <= image[i][j][2] <= 255 ):
             output[new_y, new_x, :] = image[i, j, :]
         else:
             output[new_y][new_x][0] = 0
             output[new_y][new_x][1] = 0
             output[new_y][new_x][2] = 0
-
-result = Image.fromarray((output).astype(np.uint8))  # converting array to image
+final = np.concatenate((image,output),axis=1)
+result = Image.fromarray((final).astype(np.uint8))  # converting array to image
 result.save(f"sheared_image_{landa}.jpg")  # saving the image
