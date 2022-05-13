@@ -27,3 +27,4 @@ for i in range(0, n):
             toeplitz[i + 1][j + 1] = toeplitz[i][j]
 print("Toeplitz matrix : ")
 print(toeplitz)
+# make an upper Triangular
