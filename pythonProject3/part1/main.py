@@ -1,5 +1,6 @@
 # LA HW3
 # Samin Mahdipour - 9839039
+#part I
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
