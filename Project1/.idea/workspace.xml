@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7053f38-960b-4196-b1da-03c1daf6a060" name="Changes" comment="Final Edition+" />
+    <list default="true" id="b7053f38-960b-4196-b1da-03c1daf6a060" name="Changes" comment="Final Edition+">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/pythonProject3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/part1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/part1/part1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/part2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/part2/part2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/part3/main.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -151,6 +167,7 @@
       <workItem from="1647103513246" duration="12884000" />
       <workItem from="1647119068808" duration="1748000" />
       <workItem from="1647506784116" duration="1412000" />
+      <workItem from="1653485095488" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="change directory">
       <created>1646083756489</created>
