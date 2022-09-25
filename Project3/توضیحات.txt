@@ -1,2 +1,1 @@
-در بخش اول با دریافت تصویر کاربر پراکندگی رنگی آن را نمایش میدهیم
-در بخش دوم برای تصویر داده شده سایه شکل داده میشود
+This project generates a histogram for input images and tries to generate a shadow for the main object.
